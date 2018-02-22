@@ -1,6 +1,6 @@
 #### [find the sum]
 
-Dando un arreglo y un digito, encuentra y muestra en consola los 2 digitos que sumen el digito.
+Dado un arreglo y un digito, encuentra y muestra en consola los 2 digitos que sumen el digito.
 
 Debes retornar los 2 digitos que hagan la suma en un arreglo.
 
