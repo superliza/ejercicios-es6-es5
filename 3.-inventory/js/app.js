@@ -16,16 +16,23 @@ const inventory = [
 ];
 
 var totalByCategory = function(inventory, category) {
-  var filterCategory = function filterCategory(prod) {
-    var totalProd = prod.category === category;
+  var filterCategory = function filterCategory(inventory, hola) {
+    // console.log(hola);
+    
+    var totalProd = inventory.category === category;
+    // console.log(totalProd);
+    
     return totalProd;
   };
   var sumInventory = function sumInventory(prodAnterior, prodActual) {
+    console.log(prodAnterior);
+    
     var base = prodAnterior + parseInt(prodActual.stock, 10);
+    // console.log(base);
     return base;
   };
   var filtrando = inventory.filter(filterCategory).reduce(sumInventory, 0);
-  console.log(filtrando);
+  // console.log(filtrando);
   return filtrando;
 };
 
